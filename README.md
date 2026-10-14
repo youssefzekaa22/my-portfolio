@@ -85,3 +85,4 @@ Optional, after you know your final URL:
 - **Illustrative visuals are labeled.** The hero terminal and the toolkit output say they are illustrative, not recordings.
 - **One moment of motion.** The hero terminal types once, and the pipeline draws once when scrolled into view. Both are disabled under `prefers-reduced-motion`.
 - **Accessibility.** Semantic landmarks, one `h1`, a skip link, visible focus rings, `aria-current` on the active nav link, text alternatives for diagrams, and no horizontal page scroll down to 320 px wide.
+
