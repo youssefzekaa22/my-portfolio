@@ -7,10 +7,12 @@ A static portfolio built with **React + Vite + Tailwind CSS v4**. No UI librarie
 ## What's on it
 
 - **Hero:** role, short pitch, and a live-looking cluster terminal (labeled as illustrative).
-- **About, Journey, Skills:** DevSecOps training at NTI, DevOps internship at Route, and the tools used in real projects.
+- **About, Journey, Skills:** DevSecOps at NTI, freelance DevOps (Elora Business Solutions), the DevOps internship at Route, and the tools used in real projects.
 - **Featured projects**, each with Docker Compose and Kubernetes diagrams where they apply:
-  - Traefik platform on Kubernetes (no public repo yet)
+  - Production Odoo 19 deployment on a hardened VPS (freelance client work, no public repo)
+  - Traefik microservices platform on Kubernetes, with HPA (no public repo yet)
   - Job Application Tracker
+  - Automated database backup (Kubernetes CronJob)
   - Recipe App (based on an open-source project, noted on the card)
   - Zeeka Academy
 - **Automation:** three Bash projects with links to their repos.
@@ -100,7 +102,7 @@ Only facts that appear in the CV or the repos go on the site. No invented number
     ├── index.css               Tailwind + design tokens (colors, fonts, motion)
     ├── data/                   ALL content: edit here
     │   ├── profile.js          contact info, about text, education
-    │   ├── journey.js          NTI / Route / next-step timeline
+    │   ├── journey.js          Route / NTI / Elora / next-step timeline
     │   ├── skills.js           skill groups and icons
     │   ├── projects.js         featured + automation projects
     │   ├── focus.js            "Currently building with"
@@ -111,6 +113,7 @@ Only facts that appear in the CV or the repos go on the site. No invented number
         ├── Icon.jsx            UI icons + brand icons
         ├── DiagramTabs.jsx     Docker Compose / Kubernetes switcher (ARIA tablist)
         ├── diagrams/           one SVG diagram per project per deployment layer
+        │   ├── OdooVpsDiagram.jsx / CronJobBackupDiagram.jsx
         │   ├── TraefikK8sDiagram.jsx
         │   ├── TrackerComposeDiagram.jsx / TrackerK8sDiagram.jsx
         │   ├── RecipeComposeDiagram.jsx / RecipeK8sDiagram.jsx
